@@ -1,0 +1,14 @@
+@import '~normalize.css';
+
+@import './utils/reset.scss';
+@import './utils/fonts.scss';
+@import './utils/variables.scss';
+
+@import './blocks/page.scss';
+@import './blocks/nav.scss';
+@import './blocks/form.scss';
+@import './blocks/comments.scss';
+
+* {
+  box-sizing: border-box;
+}

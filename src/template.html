@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" class="page">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+<body class="page__body">
+  <main class="page__main">
+    <nav class="page__nav nav">
+      <ul class="nav__list">
+        <li class="nav__item nav__item--active">
+          <img
+            src="./images/icons/comments.png"
+            alt="Комментарии"
+            class="nav__icon"
+          >
+          <a href="#комментарии" class="nav__link">Комментарии</a>
+        </li>
+        <li class="nav__item">
+          <a href="#активность" class="nav__link">Активность</a>
+        </li>
+      </ul>
+    </nav>
+    <section class="page__section comments">
+      <div class="comments__content">
+        <form action="" class="comments__form form" name="form">
+          <div class="form__option">
+            <span class="form__title">Имя:</span>
+            <input type="text" class="form__name">
+          </div>
+
+          <div class="form__option">
+            <span class="form__title">Текст:</span>
+            <textarea class="form__textarea" cols="30" rows="10"></textarea>
+          </div>
+
+          <div class="form__option">
+            <span class="form__title">Дата:</span>
+            <input type="date" class="form__date">
+          </div>
+
+          <div class="form__button">
+            <a href="" class="form__link">Добавить</a>
+          </div>
+        </form>
+
+        <div class="">
+          <ul class="comments__list">
+            <li class="comments__item">
+              <div class="form__date-block">
+                <span class="comments__value">7 марта, </span>
+                <span class="comments__value">20:10</span>
+              </div>
+              <span class="comments__value">Оля</span>
+              <span class="comments__value">Первый комментарий! Ура!</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
