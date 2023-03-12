@@ -1,27 +1,58 @@
 .comments {
   &__content {
-    margin: 20px 0 0;
+    margin: 40px 0 0;
     display: flex;
+    justify-content: space-between;
   }
 
   &__form {
-    margin-right: 40px;
+    margin-right: 80px;
   }
-
-  &__list {}
-
+  
   &__item {
     padding: 16px 16px;
-    width: 100%;
+    width: 800px;
     border-radius: $border-radius;
     box-shadow: $box-shadow;
-
+    
     &:not(:last-child) {
       margin-bottom: 12px;
     }
   }
-
+  
   &__value {
     display: block;
+
+    &--name {
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+  }
+
+  &__header {
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__date-block {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 50px;
+  }
+
+  &__like,
+  &__delete {
+    width: 20px;
+    object-fit: contain;
+    opacity: .7;
+    cursor: pointer;
   }
 }

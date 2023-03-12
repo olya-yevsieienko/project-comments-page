@@ -1,20 +1,33 @@
 .form {
   &__option {
+    display: flex;
+    flex-direction: column;
+
     &:not(:last-child) {
       margin-bottom: 24px;
     }
   }
 
-  &__title {}
+  &__title {
+    margin-bottom: 12px;
+  }
 
-  &__name {}
+  &__input {
+    padding: 8px;
+    border: 2px solid $grey;
+    border-radius: $border-radius--small;
+    outline: none;
+  }
 
-  &__textarea {}
+  &__textarea {
+    resize: none;
+  }
 
-  &__date {}
-
-  &__date-block {
-    display: flex;
+  &__error {
+    margin-top: 8px;
+    visibility: visible;
+    font-size: 12px;
+    color: red;
   }
 
   &__button {
@@ -24,7 +37,7 @@
     height: 40px;
     width: 120px;
     color: $white;
-    border-radius: 12px;
+    border-radius: $border-radius--small;
     background-color: $blue;
   }
 
