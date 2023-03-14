@@ -1,6 +1,5 @@
 # Comments Page
 
-
 ## Basic task - Create add comment block
 1. block contains form for adding comment:
       - name, text;
@@ -10,13 +9,11 @@
 3. delete comment button;
 4. like button.
 
-
 ## Used technology
 - HTML;
 - JavaScript;
 - SASS;
 - Webpack;
-
 
 ## Preview
 ![image](https://user-images.githubusercontent.com/62176625/224529430-6c291840-bd79-4ea3-b130-0f5e9a7c4701.png)

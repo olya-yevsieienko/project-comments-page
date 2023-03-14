@@ -2,6 +2,8 @@
 
 import { createLi } from './createListItem';
 
+const form = document.querySelector('.form');
+
 const commentList = document.querySelector('.comments__list');
 const button = document.querySelector('.form__button');
 
@@ -31,6 +33,7 @@ function submitForm(event) {
 }
 
 button.addEventListener('click', submitForm);
+form.addEventListener('submit', submitForm);
 
 commentName.onblur = function () {
   if (!commentName.value.length) {
