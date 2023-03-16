@@ -14,9 +14,14 @@
 
   &__input {
     padding: 8px;
+    width: 360px;
     border: 2px solid $grey;
     border-radius: $border-radius--small;
     outline: none;
+
+    &--textarea {
+      resize: none;
+    }
   }
 
   &__textarea {
